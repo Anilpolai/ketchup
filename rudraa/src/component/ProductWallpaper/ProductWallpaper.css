@@ -1,0 +1,92 @@
+.product-wallpaper {
+  background: rgba(16, 23, 16, 0.849);
+  /* black background overlay */
+  padding: 20px 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.product-wallpaper-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 50px;
+}
+
+/* Left side */
+.wallpaper-left {
+  background-image: url(../../img/back4.jpg);
+  background-repeat: no-repeat;
+  height: auto;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.big-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Right side horizontal images with text */
+.wallpaper-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-item {
+  background-image: url(../../img/back7.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.small-img {
+  width: 300px;
+  height: 310px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.text-box {
+  color: white;
+}
+
+.text-box h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.text-box p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .product-wallpaper-container {
+    flex-direction: column;
+  }
+
+  .wallpaper-right {
+    flex-direction: column;
+  }
+
+  .right-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .small-img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
